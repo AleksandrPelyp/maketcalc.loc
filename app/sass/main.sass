@@ -43,5 +43,19 @@ b, strong
 		border-bottom: 1px solid #ccc
 		margin-bottom: 20px
 		margin-top: 50px
+	.cardimg
+		display: inline
+		label
+			margin-bottom: 20px
+			input
+				visibility: hidden
+				position: absolute
+			img
+				cursor: pointer
+				border: 1px solid transparent
+			input:checked + img
+				border: 1px solid #7DADDB
+				
+
 
 @import "media" // Always at the end

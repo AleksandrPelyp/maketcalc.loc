@@ -32,6 +32,20 @@
 				<div class="col-md-4">
 						<h2>Візитки</h2>
 					<form class="form-group" action="">
+						<label for="">Розмір:</label> <br>
+						<div class="form-check cardimg">
+								<label class="form-check-label" for="exampleRadios1">
+								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+								<img src="img/standart.png">
+								</label>
+							</div>
+							<div class="form-check cardimg">
+									<label class="form-check-label" for="exampleRadios2">
+								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+								<img src="img/euro.png">
+								</label>
+							</div>
+						<br>
 						<label for="">Кількість (шт): </label>
 						<input class="form-control" type="number" name="cardnumber" value="cardnumber">
 						<label for="">Папір (товщина): </label>
@@ -59,7 +73,7 @@
 				<label for="">Покриття (ламінація, лак): </label>
 				<br>
 			<select class="form-control" name="paper" id="cardpaper">
-			<option value="">Без покриття</option>
+			<option value="0">Без покриття</option>
 			<option value="">Ламінація глянцева одностороння 25мк</option>
 			<option value="">Ламінація глянцева двостороння 25мк</option>
 			<option value="">Ламінація матова одностороння 27мк</option>
