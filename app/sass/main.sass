@@ -39,6 +39,12 @@ b, strong
 	font-weight: bold
 
 .cardcalc
+	label
+		margin-top: 10px
+		font-family: PT sans, arial
+		font-weight: 600
+		text-align: 
+		color: #555
 	h2
 		border-bottom: 1px solid #ccc
 		margin-bottom: 20px
@@ -46,16 +52,44 @@ b, strong
 	.cardimg
 		display: inline
 		label
-			margin-bottom: 20px
+			margin-bottom: 10px
 			input
 				visibility: hidden
 				position: absolute
 			img
+				transition: 0.4s
 				cursor: pointer
 				border: 1px solid transparent
 			input:checked + img
-				border: 1px solid #7DADDB
-				
+				border: 1px solid orange
+				transition: 0.2s
+	.ckb
+		cursor: pointer
+		margin-top: 10px
+		input
+			visibility: hidden
+			position: absolute
+		i
+			display: inline-block
+			vertical-align: middle
+			height: 18px
+			border-radius: 10%
+			transition: 0.4s
+			box-shadow: inset 8px #fff
+			border: 1px solid gray
+			width: 28px
+		input + i:after
+  		content: ""
+  		display: block
+  		height: 12px
+  		width:  12px
+  		margin: 2px
+  		border-radius: inherit
+  		transition: inherit
+  		background: gray
+		input:checked + i:after
+  		margin-left: 11px
+  		background:  orange
 
 
 @import "media" // Always at the end
